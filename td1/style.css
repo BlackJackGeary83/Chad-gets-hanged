@@ -1,0 +1,45 @@
+header {
+    color: aqua;
+    text-align: center;
+    font-size: 100px;
+}
+
+div.buted {
+
+    text-align: center;
+}
+
+div.buted>button {
+    color: rebeccapurple;
+    margin: auto;
+    width: 200;
+    font-size: xx-large;
+    background-color: yellow;
+
+}
+
+div.buted>button:hover {
+    cursor: copy;
+}
+
+.notDisplayed {
+    display: none !important;
+}
+
+.letterbox {
+    display: grid;
+    border-radius: 10px;
+    border: 4mm ridge rgba(211, 220, 50, .6);
+    width: fit-content;
+
+}
+
+.ezz {
+    display: none !important;
+}
+
+#a {
+    width: 1000px;
+    height: auto;
+
+}
