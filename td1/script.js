@@ -50,6 +50,8 @@ function checkletter() {
         // alert("add useless letter")
         addletter(text)
         textfield.value = "";
+        let oof = new Audio("rob.mp3")
+        oof.play()
         return;
     }
     if (toguess.includes(text)) {
@@ -81,9 +83,9 @@ function win() {
     let a = document.getElementsByClassName("ezz")
 
     a[0].classList.remove("ezz")
-    var audio = new Audio('sexe.mp3');
-    audio.volume = 0.1
-    audio.play();
+    var earrape = new Audio('sexe.mp3');
+    earrape.volume = 0.1
+    earrape.play();
 
 }
 function updateArray(letter) {

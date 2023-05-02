@@ -1,5 +1,5 @@
 header {
-    color: aqua;
+    color: black;
     text-align: center;
     font-size: 100px;
 }
@@ -27,7 +27,7 @@ div.buted>button:hover {
 }
 
 .letterbox {
-    display: grid;
+    display: flex;
     border-radius: 10px;
     border: 4mm ridge rgba(211, 220, 50, .6);
     width: fit-content;
@@ -42,4 +42,56 @@ div.buted>button:hover {
     width: 1000px;
     height: auto;
 
+}
+
+#rooted {
+    display: grid;
+    grid-template-columns: repeat(3, 33.3333333%);
+    vertical-align: top;
+    /* column-gap: 5%; */
+}
+
+#in {
+    grid-column: 2;
+    display: grid;
+}
+
+#in>input {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#in>button {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#lettered {
+    grid-column: 1;
+    display: flex;
+}
+
+#hangman {
+    grid-column: 3;
+}
+
+#rooted>div {
+    /* width: auto; */
+    text-align: center;
+    grid-row: 1;
+    background-color: aqua;
+    vertical-align: top;
+    height: 100px;
+    border-radius: 15px;
+    border: 5px inset red;
+    margin: 16.8vh 3% 16.8vh 3%;
+
+
+}
+
+body {
+    background-image: url("back.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
 }
